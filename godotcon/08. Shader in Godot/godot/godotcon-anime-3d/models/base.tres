@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://b28hktwnywl4b"]
+
+[ext_resource type="Shader" uid="uid://dkm25iracsfgb" path="res://shaders/toon.tres" id="1_n32cg"]
+[ext_resource type="Texture2D" uid="uid://b7l4j6w3hldsu" path="res://models/base.png" id="2_xkixt"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_n32cg")
+shader_parameter/Albedo = ExtResource("2_xkixt")

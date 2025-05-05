@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://b28hktwnywl4b"]
+
+[ext_resource type="Shader" uid="uid://dkm25iracsfgb" path="res://shaders/toon.tres" id="1_n32cg"]
+[ext_resource type="Shader" uid="uid://btsqry6hi1vaq" path="res://shaders/outline.tres" id="1_t3owd"]
+[ext_resource type="Texture2D" uid="uid://b7l4j6w3hldsu" path="res://models/base.png" id="2_xkixt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6use7"]
+render_priority = 0
+shader = ExtResource("1_t3owd")
+shader_parameter/OutlineSize = 0.003
+shader_parameter/OutlineColor = Color(0, 0, 0, 1)
+
+[resource]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_6use7")
+shader = ExtResource("1_n32cg")
+shader_parameter/Albedo = ExtResource("2_xkixt")

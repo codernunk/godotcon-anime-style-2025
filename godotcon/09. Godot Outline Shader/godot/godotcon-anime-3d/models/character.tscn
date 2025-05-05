@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct8uipm6tmw6x"]
+
+[ext_resource type="PackedScene" uid="uid://n8vfstmxo7y3" path="res://models/character.glb" id="1_y7tqe"]
+[ext_resource type="Material" uid="uid://b28hktwnywl4b" path="res://models/base.tres" id="2_ultyn"]
+
+[node name="character" instance=ExtResource("1_y7tqe")]
+
+[node name="model" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_ultyn")
